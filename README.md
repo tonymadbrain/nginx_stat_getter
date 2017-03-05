@@ -83,7 +83,7 @@ server {
 Нужно скомпилировать бинарник под ту платформу, на которой запущен Zabbix сервер, для этого нужно использовать команду:
 
 ````Bash
-env GOOS={OS} GOARCH={ARCH} go build -v github.com/username/nginx_stat_getter
+env GOOS={OS} GOARCH={ARCH} go build -v github.com/tonymadbrain/nginx_stat_getter
 ````
 
 {OS} - тип операционной системы, может быть:
