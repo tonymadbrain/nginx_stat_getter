@@ -4,7 +4,7 @@
 
 Script for getting statistics from [Nginx](https://nginx.org/) Web server for Zabbix external check. Implementation of this script - https://github.com/vicendominguez/nginx-zabbix-template on Golang.
 
-## Preparation
+## Setting up
 ### Nginx
 
 To enable statistics in Nginx, create `virtual host`, like so
