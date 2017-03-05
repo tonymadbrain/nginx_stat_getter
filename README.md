@@ -35,7 +35,7 @@ env GOOS={OS} GOARCH={ARCH} go build -v github.com/tonymadbrain/nginx_stat_gette
 
 Where:
 
-{OS} - os type:
+{OS} - OS type:
 
 * Mac os - darwin
 * Windows - windows
@@ -47,6 +47,11 @@ Where:
 * x86_64 - amd64
 * x86 - 386
 * ARM - arm  (linux only)
+
+Example for Linux x86_64:
+```Bash
+$ env GOOS=linux GOARCH=amd64 go build -v github.com/tonymadbrain/nginx_stat_getter
+```
 
 Then, copy the binary to Zabbix server into `/usr/lib/zabbix/externalscripts` folder, make him executable with `chmod +x nginx_stat_getter`, set zabbix owner with  `chown zabbix:zabbix nginx_stat_getter`.
 Next, import template `zbx_nginx_template.xml` in Zabbix frontend and attach him to server(s).
